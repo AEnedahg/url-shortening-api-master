@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">Shortly</h1>
+      <nav class = "nav__menu mobile-nav-menu">
+        <ul class = "nav__list">
+          <li class = "nav__item"><a class = "nav__link" href="#">Features</a></li>
+          <li class = "nav__item"><a class = "nav__link"  href="#">Pricing</a></li>
+          <li class = "nav__item"><a class = "nav__link" href="#">Resources</a></li>
+        </ul>
+        <div class="line"></div>
+        <div class = "header__buttons">
+          <a href="#" class = "login-link">Login</a>
+          <button class = "signup-btn">
+            <a href="">Sign Up</a>
+          </button>
+        </div>
+      </nav>
+      <img id = "menu-bar-id" src="images/hamburger-menu-icon-svg-8.jpg" alt="hamburger-menu-icon-svg-8" 
+      class="menu-bar">
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-section__left">
+          <h1 class="hero-section__left--title">More than just<br> shorter links</h1>
+          <p class="hero-section__left--para">Build your brand's recognition and get detailed insights
+            on how your links are performing.
+          </p>
+          <button class = "hero-section__left--btn"><a href="#">Get Started</a></button>
+        </div>
+        <div class="hero-section__right">
+          <img src="images/illustration-working.svg" alt="illustration-working">
+        </div>
+        <div class="shorten-link__wrapper">
+          <input type="text" name="Link" id="shorten-link-input" class="shorten-link__input"
+          placeholder="Shorten a link here...">
+          <button class = "shorten-link__btn"><a href="#">Shorten it&excl;</a></button>
+        </div>
+      </section>
+      <section class="features-section">
+        <div class="features-section__wrapper">
+          <h1 class="features-section__title">Advanced Statistics</h1>
+          <p class="features-section__para">Track how your links are performing across the web with<br> our 
+            advanced statistics dashboard.</p>
+          <div class="features-section__inner">
+            <div class = "card-1 features-section__card">
+              <div class = "features-section__card--icon">
+                <img src="images/icon-brand-recognition.svg" alt="icon-brand-recognition">
+              </div>
+              <h3 class = "features-section__card--title">Brand Recognition</h3>
+              <p class = "features-section__card--para">Boost your brand recognition with each click. Generic links don&apos;t 
+                mean a thing. Branded links help instil confidence in your content.</p>
+              <div class="line-1">
+
+              </div>
+            </div>
+            <div class = "card-2 features-section__card">
+              <div class = "features-section__card--icon">
+                <img src="images/icon-detailed-records.svg" alt="icon-detailed-records">
+              </div>
+              <h3 class = "features-section__card--title">Detailed Records</h3>
+              <p class = "features-section__card--para">Gain insights into who is clicking your links. 
+                Knowing when and where people engage with your content helps inform better decisions.</p>
+              <div class="line-2">
+
+              </div>
+            </div>
+            <div class = "card-3 features-section__card">
+              <div class="features-section__card--icon">
+                <img src="images/icon-fully-customizable.svg" alt="icon-fully-customizable">
+              </div>
+              <h3 class = "features-section__card--title">Fully Customizable</h3>
+              <p class = "features-section__card--para">Improve brand awareness and content discoverability 
+                through customizable links, supercharging audience engagement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <h1 class = "cta__title">Boost your links today</h1>
+        <button class="cta__btn"><a href="#">Get Started</a></button>
+      </section>
+    </main>
+    <footer class = "footer">
+      <div class="footer__wrapper">
+        <div class="footer__wrapper--logo">
+          <h1 class="logo">Shortly</h1>
+        </div>
+        <div class="footer__wrapper--features">
+          <h3 class="title">Features</h3>
+          <ul>
+            <li><a href="#">Links Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer__wrapper--resources">
+          <h3 class="title">Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__wrapper--company">
+          <h3 class="title">Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__wrapper--social-media">
+          <a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
+          <a href="#"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
+          <a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src = "script.js">
+  
+  </script>
+</body>
+</html>

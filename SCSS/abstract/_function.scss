@@ -1,0 +1,13 @@
+@import "variables";
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name)
+};
+
+@function colors-neutral($color-neutral) {
+  @return map-get($colors-neutral, $color-neutral)
+};
+
+@function colors-primary($color-primary) {
+  @return map-get($colors-primary, $color-primary)
+}
+

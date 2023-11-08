@@ -1,0 +1,13 @@
+@import "../abstract/variables";
+ul, li {
+  list-style: none;
+}
+
+a, a:link, a:hover {
+  text-decoration: none;
+  font-family: $ff-primary;
+}
+
+input {
+  font-family: $ff-primary;
+}

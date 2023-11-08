@@ -1,0 +1,39 @@
+// Base
+@import "./base/normalize";
+@import "./base/reset";
+@import "./base/typography";
+
+// Layout
+@import "./layout/cta";
+@import "./layout/features";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+
+// Component
+@import "./component/buttons";
+@import "./component/cards";
+
+// Abstract
+@import "./abstract/function";
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+// Theme
+@import "./theme/theme";
+@import "./vendor/bootstrap";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: $ff-primary;
+  .container {
+    width: 1440px;
+    height: 2269px;
+    margin: 0 auto;
+  }
+}
+
+main {
+  width: 100%;
+}

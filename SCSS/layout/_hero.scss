@@ -1,0 +1,296 @@
+@import "../abstract/variables";
+@import "../abstract/function";
+.hero-section {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  &__left {
+    width: 70%;
+    margin: 140px 0 0 130px;
+    &--title {
+      font: {
+        size: 7.4rem;
+        family: $ff-primary;
+      };
+      color: colors-neutral(very-dark-violet);
+      line-height: 1;
+    }
+    &--para {
+      font: {
+        size: 1.6rem;
+        family: $ff-primary;
+      }
+      width: 70%;
+      color: colors-neutral(grayish-violet);
+      line-height: 1.7;
+    }
+    &--btn {
+      width: 150px;
+      height: 35px;
+      border-radius: 15px;
+      outline: none;
+      border: none;
+      margin-top: 30px;
+      font: {
+        size: 1.6rem;
+        family: $ff-primary;
+      };
+      background-color: colors-primary(cyan);
+      transition: all ease 0.3s;
+      &:hover {
+        background-color: aquamarine;
+      }
+      & a {
+        color: white;
+      }
+    }
+  }
+  &__right {
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.shorten-link__wrapper {
+  width: 1175px;
+  height: 150px;
+  position: absolute;
+  left: 130px;
+  bottom: -75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-color: colors-primary(dark-violet);
+  border-radius: 10px;
+  .shorten-link__input {
+    width: 800px;
+    height: 55px;
+    border-radius: 10px;
+    outline: 1px solid blue;
+    font: {
+      size: 1.6rem;
+      weight: weight(regular);
+      family: $ff-primary;
+    }
+    padding: 20px;
+  }
+  .shorten-link__btn {
+    height: 55px;
+    width: 175px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    font: {
+        size: 1.6rem;
+        family: $ff-primary;
+      };
+      background-color: colors-primary(cyan);
+      transition: all ease 0.3s;
+      &:hover {
+        background-color: aquamarine;
+      }
+      & a {
+        color: white;
+      }
+  }
+}
+
+// mobile device
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    height: 700px;
+    width: 320px;
+  }
+
+  .hero-section__left--title {
+    font-size: 6.0rem;
+    width: 100%;
+  } 
+  .hero-section__right img {
+    width: 400px;
+    margin-left: 0;
+  }
+  .hero-section__left {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+    margin-bottom: 150px;
+  }
+  .hero-section__right {
+    margin-bottom: 20px;
+  }
+  .hero-section__left--title {
+    text-align: center;
+    margin-right: 80px;
+    font-size: 3.0rem;
+  }
+  .hero-section__left--para {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-section__left--btn {
+    margin-left: 70px;
+  }
+  .shorten-link__wrapper {
+    width: 260px;
+    padding: 0 40px;
+    height: 180px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 25px;
+  }
+  .shorten-link__wrapper .shorten-link__input {
+    width: 220px;
+  }
+  .shorten-link__wrapper .shorten-link__btn {
+    width: 220px;
+    margin-right: 20px;
+  }
+}
+// ipads, tablets
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    height: 1000px;
+    width: 481px;
+  }
+
+  .hero-section__left--title {
+    font-size: 6.0rem;
+    width: 100%;
+  } 
+  .hero-section__right img {
+    width: 500px;
+    margin-left: 0;
+  }
+  .hero-section__left {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 90%;
+    margin-bottom: 200px;
+  }
+  .hero-section__right {
+    margin-bottom: 30px;
+  }
+  .hero-section__left--title {
+    text-align: center;
+    margin-right: 80px;
+    font-size: 4.0rem;
+  }
+  .hero-section__left--para {
+    text-align: center;
+    width: 90%;
+    margin-left: 20px;
+  }
+  .hero-section__left--btn {
+    margin-left: 130px;
+  }
+  .shorten-link__wrapper {
+    width: 400px;
+    padding: 0 40px;
+    height: 180px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 30px;
+  }
+  .shorten-link__wrapper .shorten-link__input {
+    width: 350px;
+  }
+  .shorten-link__wrapper .shorten-link__btn {
+    width: 350px;
+    margin-right: 20px;
+  }
+}
+// small screens, laptops
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    height: 1000px;
+    width: 769px;
+  }
+
+  .hero-section__left--title {
+    font-size: 6.0rem;
+  } 
+  .hero-section__right img {
+    width: 500px;
+    margin-left: 120px;
+  }
+  .hero-section__left {
+    margin-top: 100px;
+    margin-bottom: 250px;
+  }
+  .hero-section__left--title {
+    text-align: center;
+    margin-right: 80px;
+  }
+  .hero-section__left--para {
+    text-align: center;
+    width: 90%;
+  }
+  .hero-section__left--btn {
+    margin-left: 150px;
+  }
+  .shorten-link__wrapper {
+    width: 500px;
+    padding: 0 40px;
+    height: 180px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .shorten-link__wrapper .shorten-link__input {
+    width: 400px;
+  }
+  .shorten-link__wrapper .shorten-link__btn {
+    width: 400px;
+    margin-right: 20px;
+  }
+}
+// large screens, desktops
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .hero-section {
+    width: 1025px;
+  }
+  .hero-section__left--title {
+    font-size: 6.0rem;
+  } 
+  .hero-section__right img {
+    width: 500px;
+  }
+  .hero-section__left {
+    margin-left: 80px;
+  }
+  .shorten-link__wrapper {
+    width: 750px;
+    padding: 0 60px;
+  }
+  .shorten-link__wrapper .shorten-link__input {
+    width: 400px;
+  }
+}
+
+// larger screens
+@media(min-width: 1201px) and (max-width: 1400px) {
+  .hero-section__left--title {
+    font-size: 6.0rem;
+  } 
+  .hero-section__right img {
+    width: 700px;
+    margin-right: 150px;
+  }
+  .shorten-link__wrapper {
+    width: 950px;
+    padding: 0 50px;
+  }
+  .shorten-link__wrapper .shorten-link__input {
+    width: 600px;
+  }
+}

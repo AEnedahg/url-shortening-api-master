@@ -1,0 +1,315 @@
+@import "../abstract/variables";
+@import "../abstract/function";
+header {
+  display: flex;
+  padding: 20px 130px 0;
+  position: relative;
+  h1 {
+    font: {
+      size: 3.6rem;
+      weight: weight(bold);
+    }
+    color: colors-neutral(very-dark-violet);
+  }
+  .nav__menu {
+    width: 1000px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
+    .nav__list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 300px;
+      .nav__link {
+        color: colors-neutral(grayish-violet);
+        cursor: pointer;
+        font: {
+          size: 1.6rem;
+          family: $ff-primary;
+        };
+        transition: all 0.3s ease;
+        &:hover {
+          color: colors-neutral(very-dark-violet);
+        }
+      }
+    }
+    .header__buttons {
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      .login-link {
+        color: colors-neutral(grayish-violet);
+        cursor: pointer;
+        font: {
+          size: 1.6rem;
+          family: $ff-primary;
+        };
+        transition: all 0.3s ease;
+        &:hover {
+          color: colors-neutral(very-dark-violet);
+        }
+      }
+      .signup-btn {
+        width: 110px;
+        height: 35px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        font: {
+          size: 1.6rem;
+          family: $ff-primary;
+        };
+        background-color: colors-primary(cyan);
+        transition: all ease 0.3s;
+        &:hover {
+          background-color: aquamarine;
+        }
+        & a {
+          color: white;
+        }
+      }
+    }
+  }
+  .menu-bar {
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
+}
+
+// mobile device
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    width: 320px;
+    padding: 20px 20px 0;
+  }
+  header .menu-bar {
+    display: block;
+    margin-left: auto;
+  }
+  header .nav__menu {
+    display: none;
+  }
+  header .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 30px;
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: -350px;
+    right: 20px;
+    z-index: 2;
+    background-color: colors-primary(dark-violet);
+  }
+  header .nav__list {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 150px !important;
+  }
+  .nav__menu .header__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 80px !important;
+  }
+  .mobile-nav-menu .nav__item {
+    height: 50px;
+  }
+  .mobile-nav-menu .login-link {
+    color: white !important;
+    font: {
+      weight: weight(bold);
+    }
+  }
+  .mobile-nav-menu .line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    opacity: 0.5;
+  }
+  .mobile-nav-menu .nav__link {
+    color: white !important;
+    font: {
+      weight: weight(bold);
+    }
+  }
+  .mobile-nav-menu .signup-btn {
+    width: 100% !important;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+// ipads, tablets
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    width: 481px;
+    padding: 20px 40px 0;
+  }
+  header .menu-bar {
+    display: block;
+    margin-left: auto;
+  }
+  header .nav__menu {
+    display: none;
+  }
+  header .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 30px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: -350px;
+    right: 50px;
+    z-index: 2;
+    background-color: colors-primary(dark-violet);
+  }
+  header .nav__list {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 150px !important;
+  }
+  .nav__menu .header__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 80px !important;
+  }
+  .mobile-nav-menu .nav__item {
+    height: 50px;
+  }
+  .mobile-nav-menu .login-link {
+    color: white !important;
+    font: {
+      weight: weight(bold);
+    }
+  }
+  .mobile-nav-menu .line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    opacity: 0.5;
+  }
+  .mobile-nav-menu .nav__link {
+    color: white !important;
+    font: {
+      weight: weight(bold);
+    }
+  }
+  .mobile-nav-menu .signup-btn {
+    width: 100% !important;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+// small screens, laptops
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 769px;
+    padding: 20px 40px 0;
+  }
+  header .menu-bar {
+    display: block;
+    margin-left: auto;
+  }
+  header .nav__menu {
+    display: none;
+  }
+  header .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 30px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: -350px;
+    right: 50px;
+    z-index: 2;
+    background-color: colors-primary(dark-violet);
+  }
+  header .nav__list {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 150px !important;
+  }
+  .nav__menu .header__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 80px !important;
+  }
+  .mobile-nav-menu .nav__item {
+    height: 50px;
+  }
+  .mobile-nav-menu .login-link {
+    color: white !important;
+    font: {
+      weight: weight(bold);
+    }
+  }
+  .mobile-nav-menu .line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    opacity: 0.5;
+  }
+  .mobile-nav-menu .nav__link {
+    color: white !important;
+    font: {
+      weight: weight(bold);
+    }
+  }
+  .mobile-nav-menu .signup-btn {
+    width: 100% !important;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+// large screens, desktops
+@media (min-width: 1025px) and (max-width: 1200px) {
+  header {
+    width: 1025px;
+    padding: 20px 80px 0;
+  }
+  .menu-bar {
+    display: none;  
+  }
+  header .mobile-menu {
+    display: none;
+  }
+}
+// larger screens
+@media(min-width: 1201px) and (max-width: 1400px) {
+  header {
+    width: 1201px;
+  }
+  .menu-bar {
+    display: none;
+  }
+  header .mobile-menu {
+    display: none;
+  }
+}
+@media(min-width: 1440px) {
+  header .mobile-menu {
+    display: none;
+  }
+}

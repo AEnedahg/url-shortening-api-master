@@ -1,0 +1,99 @@
+@import "../abstract/function";
+@import "../abstract/variables";
+
+.footer {
+  height: 325px;
+  background-color: colors-neutral(very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    height: 250px;
+    width: 80%;
+    &--logo {
+      h1 {
+        font: {
+          size: 3.6rem;
+          weight: weight(bold);
+        }
+        color: white;
+      }
+    }
+    &--features, &--resources, &--company {
+      .title {
+        font: {
+          size: 1.8rem;
+          weight: weight(bold);
+        }
+        color: white;
+        margin-bottom: 20px;
+      }
+      ul {
+        line-height: 2;
+      }
+      a {
+        color: #F0F1F6;
+        transition: all 0.3s ease;
+        &:hover {
+          color: darken(#F0F1F6, 20%);
+        }
+      }
+    }
+    &--social-media {
+      display: flex;
+      gap: 25px;
+    }
+  }
+}
+
+// mobile device
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    width: 480px;
+    min-width: 320px;
+    height: 540px;
+    align-items: flex-start;
+  }
+  .footer__wrapper {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+  }
+}
+// ipads, tablets
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    width: 768px;
+    min-width: 481px;
+    height: 540px;
+    align-items: flex-start;
+  }
+  .footer__wrapper {
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+// small screens, laptops
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    width: 1024px;
+    min-width: 769px;
+  }
+}
+// large screens, desktops
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .footer {
+    width: 1200px;
+    min-width: 1025px;    
+  }
+}
+
+// larger screens
+@media(min-width: 1201px) and (max-width: 1400px) {
+  .footer {
+    width: 1400px;
+    min-width: 1201px;
+  }
+}
